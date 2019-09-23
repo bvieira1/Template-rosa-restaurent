@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+$main-font-color: #f2b632;
+$main-white: #fff;
+$main-font-dark-gray: #4d4d4d;
+$main-footer-bg-color: #141414;
+$main-font-family: "Cheddar Jack",
+cursive;
+*,
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: $main-font-dark-gray;
+}
+
+a {
+    text-decoration: none;
+    color: $main-white;
+}
+
+.btn {
+    display: inline-block;
+    transition: all 650ms;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

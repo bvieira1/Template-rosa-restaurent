@@ -1,0 +1,30 @@
+<header id="home">
+    <div class="menu">
+        <span class="bar" (click)="opened=!opened"></span>
+    </div>
+
+    <nav class="nav">
+        <div class="overlay">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#story">Our Story</a>
+                </li>
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-text">
+        <h1>Welcome</h1>
+        <h2>{{ title }}</h2>
+        <a href="#" class="btn main-btn">Explore</a>
+    </div>
+</header>
