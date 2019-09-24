@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-menu.component.scss']
 })
 export class OurMenuComponent implements OnInit {
-
+  disc = "Discover";
   constructor() { }
 
   ngOnInit() {

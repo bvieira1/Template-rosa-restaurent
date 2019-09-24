@@ -4,3 +4,22 @@ $main-font-dark-gray: #4d4d4d;
 $main-footer-bg-color: #141414;
 $main-font-family: "Cheddar Jack",
 cursive;
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: $main-footer-bg-color;
+    padding: 5rem 0;
+    font-size: 1.8rem;
+    color: $main-white;
+}
+
+footer h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: $main-font-color;
+    font-weight: 100;
+    font-family: "Bebas Neues", sans-serif;
+}

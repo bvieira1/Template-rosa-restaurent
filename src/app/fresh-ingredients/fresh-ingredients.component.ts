@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fresh-ingredients.component.scss']
 })
 export class FreshIngredientsComponent implements OnInit {
-
+flesh = "Fresh";
   constructor() { }
 
   ngOnInit() {

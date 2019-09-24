@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400&display=swap');
+@font-face {
+    font-family: 'Cheddar Jack';
+    src: url(src/assets/fonts/cheddar-jack.ttf) format("truetype");
+    font-weight: 300;
+}
+
 $main-font-color: #f2b632;
 $main-white: #fff;
 $main-font-dark-gray: #4d4d4d;
@@ -40,6 +47,140 @@ a {
     transition: all 650ms;
     border-radius: 3px;
     text-transform: uppercase;
+    background: $main-white !important;
+    border: none !important;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.btn-info {
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: $main-font-color;
+    border-bottom: 2px solid $main-font-color !important;
+    margin: 2rem 0 4rem 0;
+}
+
+.btn-info:hover {
+    background-color: $main-font-color !important;
+    color: $main-white !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.custom-font {
+    font-family: $main-font-family;
+    color: $main-font-color;
+    font-size: 6.5rem;
+    line-height: 1;
+    font-weight: 100;
+}
+
+.custom-font-secondary {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: -5px;
+    font-size: 2rem;
+    line-height: .2;
+    color: $main-font-dark-gray;
+    margin-bottom: 5rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.between-sec {
+    padding: 25rem 0;
+    text-align: center;
+}
+
+.between-sec-color {
+    color: $main-white;
+}
+
+@media screen and (min-width: 769px) {
+    header,
+    .between-sec {
+        background-attachment: fixed !important;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .center {
+        flex: 1;
+    }
+    .add-flex {
+        flex: 1;
+    }
+    .add-padding-right {
+        padding-right: 10rem;
+    }
+    .first {
+        order: 1;
+    }
+    .second {
+        order: 2;
+    }
+    .store {
+        min-height: 40rem !important;
+    }
+    .btn-info {
+        font-size: 1.8rem !important;
+    }
+    .logo {
+        display: block !important;
+    }
+    .main-text h1 {
+        transform: translateY(4rem);
+        opacity: 0;
+        animation: .5s fadeUp .5s forwards;
+    }
+    .main-text h2 {
+        transform: scale(2);
+        opacity: 0;
+        animation: fadeIn .5s forwards;
+    }
+    .main-text .main-btn .logo {
+        opacity: 0;
+        animation: .5s fade 1s forwards;
+    }
+    @keyframes fadeIn {
+        0% {
+            transform: scale(2);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    @keyframes fadeUp {
+        0% {
+            transform: translateY(4rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

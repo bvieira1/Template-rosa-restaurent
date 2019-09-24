@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { $ } from 'protractor';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { $,} from 'protractor';
 
 
 @Component({
@@ -8,13 +8,16 @@ import { $ } from 'protractor';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  title = "The Rosa";
+  @Output() sidenavClose = new EventEmitter();
+  title = "Rosa";
 
   constructor() { }
 
   ngOnInit() {
   }
+   public onSidenavClose = () => {
+    this.sidenavClose.emit();
+  };
 
 
 }
