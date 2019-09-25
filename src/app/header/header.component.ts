@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   @Output() sidenavClose = new EventEmitter();
   title = "Rosa";
 
+
   constructor() { }
 
   ngOnInit() {
@@ -18,6 +19,7 @@ export class HeaderComponent implements OnInit {
    public onSidenavClose = () => {
     this.sidenavClose.emit();
   };
+
 
 
 }
